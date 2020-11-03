@@ -1,0 +1,1 @@
+SELECT t.team_year, COUNT(*) as Player_Count FROM players p left join teams t on p.team_id = t.id WHERE t.name = 'Otago' group by team_year;
